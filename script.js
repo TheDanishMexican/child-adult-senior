@@ -2,14 +2,15 @@
 
 window.addEventListener("load", start);
 
-let age = 66;
-
 function start() {
+  console.log("Page loaded");
   adultOrChildOrSenior();
 }
 
 function adultOrChildOrSenior() {
-  if (age > 65) {
+  let age = 50;
+
+  if (age > 72) {
     isSenior();
   } else if (age >= 18) {
     isAdult();
