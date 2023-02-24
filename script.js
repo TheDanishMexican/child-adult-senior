@@ -2,14 +2,15 @@
 
 window.addEventListener("load", start);
 
+let age = 0;
+
 function start() {
   console.log("Page loaded");
-  adultOrChildOrSenior();
+
+  document.querySelector("#submit").addEventListener("click", submitAge);
 }
 
 function adultOrChildOrSenior() {
-  let age = 73;
-
   if (age > 72) {
     isSenior();
   } else if (age >= 18) {
@@ -17,6 +18,14 @@ function adultOrChildOrSenior() {
   } else {
     isChild();
   }
+}
+
+function submitAge() {
+  console.log("age is submitted");
+  let input = document.querySelector("#name");
+  age = input.value;
+  let submit = document.querySelector("#submit");
+  adultOrChildOrSenior();
 }
 
 function isAdult() {
