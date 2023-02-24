@@ -8,7 +8,7 @@ function start() {
 }
 
 function adultOrChildOrSenior() {
-  let age = 50;
+  let age = 73;
 
   if (age > 72) {
     isSenior();
